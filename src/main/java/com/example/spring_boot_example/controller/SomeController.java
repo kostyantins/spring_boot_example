@@ -1,5 +1,6 @@
 package com.example.spring_boot_example.controller;
 
+import com.example.spring_boot_example.dao.GenericDao;
 import com.example.spring_boot_example.model.Clusters;
 import com.example.spring_boot_example.model.GeoZones;
 import com.example.spring_boot_example.repository.ClusterRepository;
@@ -38,7 +39,6 @@ public class SomeController {
     public SomeController deleteData() {
         geoZoneRepository.delete(geoZones);
         clusterRepository.delete(clusters);
-
         return this;
     }
 
