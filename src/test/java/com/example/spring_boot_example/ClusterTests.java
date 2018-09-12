@@ -1,7 +1,7 @@
 package com.example.spring_boot_example;
 
 import com.example.spring_boot_example.controller.SomeController;
-import com.example.spring_boot_example.model.Clusters;
+import com.example.spring_boot_example.entity.Clusters;
 import com.example.spring_boot_example.util.ApiTestRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;

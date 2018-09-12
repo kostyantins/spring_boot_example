@@ -1,7 +1,7 @@
 package com.example.spring_boot_example.repository;
 
 
-import com.example.spring_boot_example.model.Clusters;
+import com.example.spring_boot_example.entity.Clusters;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -14,6 +14,7 @@ import java.util.List;
 @Repository
 public interface ClusterRepository extends JpaRepository<Clusters, Integer> {
 
+    //TODO create for 'RestoreRepository' interface
     @Transactional
     @Modifying
     @Query(value = "USE master\n" +
@@ -21,7 +22,7 @@ public interface ClusterRepository extends JpaRepository<Clusters, Integer> {
             "SET SINGLE_USER\n" +
             "WITH ROLLBACK IMMEDIATE\n" +
             "RESTORE DATABASE EnterpriseDB\n" +
-            "FROM  DISK = N'd:\\GIT\\kernel\\automation_test_framework\\test\\automation_test_framework\\src\\main\\resources\\db_beckups\\EnterpriseDB_2018-08-29_clean.bak'\n" +
+            "FROM  DISK = N'd:\\GIT\\kernel\\automation_test_framework\\test\\automation_test_framework\\src\\main\\resources\\db_beckups\\EnterpriseDB_2018-09-04.bak'\n" +
             "WITH  FILE = 1\n" +
             ",  NOUNLOAD\n" +
             ",  REPLACE\n" +

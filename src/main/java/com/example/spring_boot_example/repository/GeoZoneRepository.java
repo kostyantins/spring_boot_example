@@ -1,6 +1,6 @@
 package com.example.spring_boot_example.repository;
 
-import com.example.spring_boot_example.model.GeoZones;
+import com.example.spring_boot_example.entity.GeoZones;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

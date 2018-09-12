@@ -1,8 +1,7 @@
 package com.example.spring_boot_example.controller;
 
-import com.example.spring_boot_example.dao.GenericDao;
-import com.example.spring_boot_example.model.Clusters;
-import com.example.spring_boot_example.model.GeoZones;
+import com.example.spring_boot_example.entity.Clusters;
+import com.example.spring_boot_example.entity.GeoZones;
 import com.example.spring_boot_example.repository.ClusterRepository;
 import com.example.spring_boot_example.repository.GeoZoneRepository;
 import lombok.Getter;
